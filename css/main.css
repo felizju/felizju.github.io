@@ -1,0 +1,1185 @@
+/* 구글 웹 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+
+/* reset */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* common */
+.wrap {
+    font: 14px "Noto Sans KR", sans-serif;
+}
+
+.en {
+    font-family: "Exo 2", sans-serif;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+br.mo {
+    display: none;
+}
+
+header .inner-header .gnb-mobile {
+    display: none;
+}
+
+
+
+/* header */
+header {
+    width: 100%;
+    background: #fff;
+    height: 100px;
+    line-height: 100px;
+    position: fixed;
+    z-index: 100;
+}
+
+header .inner-header {
+    width: 84%;
+    margin: 0 auto;
+}
+
+header .inner-header .logo {
+    float: left;
+    width: 200px;
+}
+
+header .inner-header .logo img {
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    display: block;
+    margin-top: 10px;
+}
+
+header .inner-header .gnb {
+    float: left;
+    margin-left: 80px;
+}
+
+header .inner-header .gnb li {
+    float: left;
+    margin-right: 80px;
+}
+
+header .inner-header .gnb li a {
+    color: #555;
+    font-size: 15px;
+    display: block;
+}
+
+header .inner-header .gnb li a:hover {
+    color: #735fe6;
+}
+
+header .inner-header .tnb {
+    float: right;
+}
+
+header .inner-header .tnb li {
+    float: left;
+    margin-right: 25px;
+}
+
+header .inner-header .tnb li a {
+    color: #735fe6;
+    font-size: 15px;
+    text-align: center;
+}
+
+header .inner-header .tnb li:last-child a {
+    display: block;
+    width: 105px;
+    line-height: 2;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    margin-top: 34px;
+}
+
+header .inner-header .tnb li:last-child a:hover {
+    background: #fff;
+    color: #555;
+}
+
+header .inner-header .tnb li:first-child a i,
+header .inner-header .tnb li:nth-child(2) a i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+header .inner-header .tnb li:last-child a i {
+    margin-left: 5px;
+}
+
+
+
+
+/* section main */
+section.main {
+    background: url('../img/visual.png') no-repeat center/cover fixed;
+    height: 100vh;
+    position: relative;
+}
+
+section.main .main-title {
+    text-align: center;
+    width: 90%;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    animation: uprising 1s;
+}
+
+@keyframes uprising {
+    0% {
+        opacity: 0;
+        top: 60%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+    }
+}
+
+section.main .main-title .left {
+    margin-top: 100px;
+    margin-left: 200px;
+    float: left;
+    text-align: left;
+}
+
+section.main .main-title .left span {
+    font-size: 50px;
+    color: #735fe6;
+    margin: 50px 0;
+}
+
+section.main .main-title .left h2 {
+    font-size: 40px;
+    color: #555;
+    min-width:11px;
+    white-space: nowrap;
+    margin: 0;
+    position: fixed;
+    color: transparent;
+  }
+  
+  section.main .main-title .left h2::before {
+    content: "Developer 김연주의 포트폴리오입니다...";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #555;
+    overflow: hidden;
+    border-right: 1px solid black;
+    animation: typing 6s steps(31) infinite;
+  }
+  
+  @keyframes typing{
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+
+
+section.main .main-title .right img {
+    width: 500px;
+    height: 450px;
+    float: right;
+}
+
+section.main .main-title .view {
+    display: block;
+    font-size: 15px;
+    color: #735fe6;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    width: 180px;
+    margin: 0 auto;
+    padding: 8px 0;
+    letter-spacing: 1px;
+
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    top: 150px;
+    left: 50px;
+}
+
+section.main .main-title .view::after {
+    /* 가상요소 만들어 겹치기 */
+    content: '';
+    width: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+
+}
+
+section.main .main-title .view:hover::after {
+    width: 100%;
+}
+
+
+
+
+/* section about */
+section.about {
+    height: 100vh;
+}
+
+section .title {
+    color: #000;
+    text-align: center;
+    margin: 150px 0;
+}
+
+section .title h2 {
+    font-size: 45px;
+    color: #735fe6;
+    margin-bottom: 5px;
+}
+
+section .title p {
+    font-size: 15px;
+    color: #555;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+section .title .aboutme {
+    font-size: 18px;
+    color: #555;
+    margin-top: 30px;
+}
+
+section .title .aboutme p {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+section .title .aboutme p:last-child {
+    margin-bottom: 80px;
+}
+
+section.about ul {
+    width: 40%;
+    margin: 30px auto;
+    border-bottom: 1px solid #ddd;
+}
+
+section.about ul li {
+    float: left;
+    width: 33.33333%;
+}
+
+section.about ul li .img-box {
+    overflow: hidden;
+    text-align: center;
+}
+
+section.about ul li .img-box img {
+    width: 70%;
+    transition: 0.7s;
+}
+
+section.about ul li:hover .img-box img {
+    transform: scale(1.3);
+}
+
+section.about ul li .text {
+    padding: 25px;
+}
+
+section.about ul li .text p {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section.about ul li .text p.more {
+    text-transform: uppercase;
+    padding-left: 40px;
+    position: relative;
+}
+
+section.about ul li .text p.more::before {
+    content: '\f30b';
+    font-family: "Font awesome 5 Free";
+    font-size: 15px;
+    line-height: 2;
+
+    width: 30px;
+    height: 30px;
+    background: #735fe6;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+
+
+
+
+
+/* section skills */
+section.skills {
+    position: relative;
+    height: 1000px;
+}
+
+section.skills .t-category {
+    text-align: center;
+    color: #555;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+section.skills .category {
+    font-size: 13px;
+    color: #555;
+    display: flex;
+    text-align: center;
+}
+
+section.skills .category .detail {
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+section.skills .category .detail .default {
+    width: 450px;
+    margin-bottom: 100px;
+}
+
+section.skills .category .detail .default img {
+    width: 60px;
+}
+section.skills .t-category .bold {
+    font-size: 20px;
+    margin: 20px 0;
+}
+section.skills .t-category .leftbox p {
+    height: 40px;
+}
+section.skills .category .detail .list {
+    text-align: left;
+}
+
+section.skills .category .detail .list ul {
+    margin-left: 50px;
+}
+section.skills .category .detail .list ul>li {
+    margin: 30px 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+section.skills .category .detail .list .align {
+    display: flex;
+    width: 250px;
+}
+section.skills .category .detail .list .align img {
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+/*  section me */
+section.me {
+    margin-bottom: 150px;
+    padding: 30px 0;
+    background: #fafafa;
+}
+
+section.me .title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section.me ul.list {
+    width: 74%;
+    margin: 30px auto;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+section.me ul.list>li {
+    padding: 30px 60px;
+}
+
+section.me ul.list>li:first-child {
+    border-bottom: 1px solid #ddd;
+}
+
+section.me ul.list>li h3 {
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 50px;
+    margin-left: 35px;
+}
+
+section.me ul.list>li h3 span {
+    color: #735fe6;
+    position: absolute;
+    left: -45px;
+    top: -10px;
+    font-size: 30px;
+}
+
+section.me ul.list>li a.more {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.6;
+    display: inline-block;
+}
+
+section.me ul.list>li a.more span {
+    color: #735fe6;
+    margin-left: 3px;
+    font-size: 14px;
+}
+
+section.me ul.in {
+    margin-bottom: 30px;
+}
+
+section.me ul.in li {
+    margin: 30px auto;
+}
+
+section.me ul.in li em {
+    float: left;
+    width: 12%;
+    font-weight: 700;
+}
+
+section.me ul.in li p {
+    float: left;
+    width: 88%;
+    position: relative;
+}
+
+section.me ul.in li p::before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: #735fe6;
+    border-radius: 50%;
+    position: absolute;
+    left: -40px;
+    top: 10px;
+}
+
+#git-btn {
+    display: block;
+    width: 200px;
+    background: #735fe6;
+    padding: 10px 0;
+    margin: 0 auto;
+    border-radius: 50px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* section project */
+section.project {
+    margin-bottom: 200px;
+}
+
+section.project ul {
+    width: 80%;
+    margin: 50px auto;
+}
+
+section.project ul li {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+
+section.project ul li:last-child {
+    margin-right: 0;
+}
+
+section.project ul li a {
+    display: block;
+}
+
+section.project ul li a .img-box {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+section.project ul li a .img-box img {
+    height: 300px;
+}
+section.project ul li a .img-box::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    background: rgba(111, 83, 231, 0.85);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
+
+section.project ul li a:hover .img-box::before {
+    width: 100%;
+}
+
+section.project ul li a .img-box::after {
+    content: 'Github';
+    font: 15px "Exo 2", sans-serif;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    color: #fff;
+    padding: 5px 30px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.7s;
+}
+
+section.project ul li a:hover .img-box::after {
+    opacity: 1;
+}
+
+section.project ul li a .img-box img {
+    width: 100%;
+}
+
+section.project ul li a .bottom {
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+section.project ul li a .bottom p {
+    font-size: 13px;
+    color: #555;
+
+}
+
+section.project ul li a .bottom p.color {
+    color: #555;
+    font-size: 25px;
+    height: 50px;
+}
+section.project ul li a .bottom p {
+    height: 70px;
+}
+
+section.project ul li a .bottom p.time {
+    color: #555;
+    font-size: 15px;
+    padding-left: 20px;
+    position: relative;
+    height: 50px;
+}
+
+section.project ul li a .bottom p.time::before {
+    content: '\f017';
+    font-family: "Font Awesome 5 Free";
+    font-size: 15px;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+
+
+
+
+
+
+/* footer */
+footer {
+    background: #39424c;
+    font-size: 14px;
+}
+
+footer>div {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    padding: 40px 0px;
+}
+
+footer .footer_links {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 20px 0;
+    padding: 0 0 12px 0;
+    border-bottom: 1px solid #485561;
+    color: #b2bbc3;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .brand span {
+    margin: 0 24px 0 0;
+}
+
+footer .brand span::after {
+    content: "|";
+    margin: 0 0 0 24px;
+    color: #485561;
+}
+
+footer .eng {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+}
+
+footer .sns {
+    display: flex;
+}
+
+footer .sns a img {
+    width: 28px;
+    opacity: 0.6;
+}
+
+footer .sns a:hover img {
+    opacity: 1;
+}
+
+footer .sns a+a {
+    margin: 0 0 0 4px;
+}
+
+footer .info {
+    color: #b2bbc3;
+    line-height: 18px;
+    font-weight: 300;
+    letter-spacing: -.5px;
+    margin: 0;
+    line-height: 22px;
+}
+
+footer .info span {
+    display: inline;
+    margin: 0 10px 0 0;
+    color: #647586;
+    font-size: 12px;
+}
+
+footer .info strong {
+    color: #b2bbc3;
+    font-weight: 300;
+}
+
+footer .info span::after {
+    content: " |";
+    display: inline-block;
+    padding: 0 0 0 10px;
+    color: #485561;
+}
+
+footer .info span:nth-child(4)::after {
+    display: none;
+}
+
+
+
+
+
+
+
+/* 반응형 작업 */
+
+/* 노트북 1599px 해상도  */
+/* @media screen and (max-width: 1599px) {
+
+    header .inner-header {
+        width: 95%;
+    }
+
+    header .inner-header .gnb {
+        margin-left: 50px;
+    }
+
+    header .inner-header .gnb li {
+        margin-right: 40px;
+    }
+
+    header .inner-header .tnb li {
+        margin-right: 10px;
+    }
+
+    section.about ul,
+    section.innovation .img-box,
+    section.me ul.list,
+    section.sns ul {
+        width: 95%;
+    }
+
+    footer .inner {
+        width: 95%;
+    }
+
+    footer .inner .list li {
+        margin-left: 20px;
+    }
+} */
+
+
+
+/* 태블릿 1024px 해상도 (아이패드 프로) */
+@media screen and (max-width: 1024px) {
+
+    header {
+        width: 100%;
+        background: #fff;
+        height: 100px;
+        line-height: 100px;
+        position: fixed;
+        z-index: 100;
+    }
+
+    header .inner-header .gnb,
+    header .inner-header .tnb {
+        display: none;
+    }
+
+    header .inner-header .gnb-mobile {
+        display: block;
+        float: right;
+        font-size: 40px;
+        color: #735fe6;
+    }
+
+    section.main .main-title {
+        width: 80%;
+    }
+
+    section.main .main-title .left {
+        margin-top: 0px;
+        margin-left: 0px;
+        float: left;
+        text-align: left;
+    }
+    section.main .main-title .left span {
+        color: rgb(115, 95, 230);
+        margin: 50px 0px;
+        font-size: 30px;
+    }
+    section.main .main-title .left h2 {
+        font-size: 25px;
+        min-width: 11px;
+        white-space: nowrap;
+        margin: 0px;
+        position: fixed;
+        color: transparent;
+    }
+    section.main .main-title .view {
+        display: block;
+        font-size: 15px;
+        color: rgb(115, 95, 230);
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 40px;
+        width: 180px;
+        margin: 0px auto;
+        padding: 8px 0px;
+        letter-spacing: 1px;
+        text-align: center;
+        font-weight: bold;
+        position: relative;
+        overflow: hidden;
+        top: 100px;
+        left: -20px;
+    }
+    section.main .main-title .right img {
+        width: 300px;
+        height: 250px;
+        float: right;
+    }
+    section.about ul, section.innovation .img-box, section.me ul.list, section.sns ul {
+        width: 70%;
+    }
+
+    section.skills .category {
+        font-size: 13px;
+        color: #555;
+        display: flex;
+        text-align: center;
+        width: 30%;
+    }
+
+    section.skills .t-category {
+        width: 100%;
+        text-align: center;
+        color: #555;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+    }
+
+    section.project ul {
+        width: 90%;
+        margin: 50px auto;
+    }
+    footer>div {
+        width: 900px;
+        margin: 0 auto;
+        position: relative;
+        box-sizing: border-box;
+        padding: 40px 0px;
+    }
+
+}
+
+
+
+/* 태블릿 768px 해상도 (아이패드) */
+@media screen and (max-width: 768px) {
+
+    header {
+        width: 100%;
+        background: #fff;
+        height: 100px;
+        line-height: 100px;
+        position: fixed;
+        z-index: 100;
+    }
+
+    header .inner-header .gnb,
+    header .inner-header .tnb {
+        display: none;
+    }
+
+    header .inner-header .gnb-mobile {
+        display: block;
+        float: right;
+        font-size: 40px;
+        color: #735fe6;
+    }
+
+    section.main .main-title {
+        width: 80%;
+    }
+
+    section.main .main-title .left {
+        margin-top: 0px;
+        margin-left: 0px;
+        float: left;
+        text-align: left;
+    }
+    section.main .main-title .left span {
+        color: rgb(115, 95, 230);
+        margin: 50px 0px;
+        font-size: 25px;
+    }
+    section.main .main-title .left h2 {
+        font-size: 20px;
+        min-width: 11px;
+        white-space: nowrap;
+        margin: 0px;
+        position: fixed;
+        color: transparent;
+    }
+    section.main .main-title .view {
+        display: block;
+        font-size: 15px;
+        color: rgb(115, 95, 230);
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 40px;
+        width: 180px;
+        margin: 0px auto;
+        padding: 8px 0px;
+        letter-spacing: 1px;
+        text-align: center;
+        font-weight: bold;
+        position: relative;
+        overflow: hidden;
+        top: 70px;
+        left: -20px;
+    }
+    section.main .main-title .right img {
+        width: 250px;
+        height: 200px;
+        float: right;
+    }
+    section.about ul, section.innovation .img-box, section.me ul.list, section.sns ul {
+        width: 65%;
+    }
+    section .title .aboutme {
+        font-size: 15px;
+        color: #555;
+        margin-top: 30px;
+    }
+    section.about ul li .text p {
+        font-size: 10px;
+        margin: 20px;
+        padding: 10px;
+    }
+    section.skills .t-category {
+        width: 100%;
+        text-align: center;
+        color: #555;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+    }
+    section.skills .category {
+        font-size: 10px;
+        color: #555;
+        display: flex;
+        text-align: center;
+        width: 30%;
+    }
+    section.skills .t-category .bold {
+        font-size: 15px;
+        margin: 20px 0;
+    }
+    section.skills .category .detail .default {
+        width: 300px;
+        margin-bottom: 100px;
+    }
+    section.project ul {
+        width: 90%;
+        margin: 50px auto;
+    }
+    section.project ul li a .img-box {
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+    section.project ul li a .img-box img {
+        height: 200px;
+    }
+    section.project ul li a .bottom p.color {
+        color: #555;
+        font-size: 18px;
+        height: 50px;
+    }
+    section.project ul li a .bottom p {
+        font-size: 10px;
+        color: #555;
+    }
+    section.project ul li a .bottom p.time {
+        color: #555;
+        font-size: 12px;
+        padding-left: 20px;
+        position: relative;
+        height: 50px;
+    }
+    section.me ul.list>li h3 span {
+        color: #735fe6;
+        position: absolute;
+        left: -35px;
+        top: -3px;
+        font-size: 20px;
+    }
+    section.me ul.list>li h3 {
+        font-size: 18px;
+        position: relative;
+        margin-bottom: 50px;
+        margin-left: 35px;
+    }
+    section.me ul.in {
+        margin-bottom: 30px;
+        font-size: 10px;
+    }
+    footer {
+        background: #39424c;
+        font-size: 10px;
+    }
+    footer>div {
+        width: 700px;
+        margin: 0 auto;
+        position: relative;
+        box-sizing: border-box;
+        padding: 40px 0px;
+    }
+}
+
+
+
+/* 모바일 414px 해상도 (아이폰 678 plus) */
+/* @media screen and (max-width: 414px) {
+
+    header {
+        height: 60px;
+        line-height: 60px;
+    }
+
+    header .inner-header .logo {
+        width: 150px;
+        position: absolute;
+        top: -7px;
+    }
+
+    section.main .main-title h2 {
+        font-size: 30px;
+    }
+
+    section.main .main-title p {
+        font-size: 16px;
+    }
+
+    section.main .main-title .view {
+        width: 150px;
+        font-size: 14px;
+    }
+
+    section .title h2 {
+        font-size: 25px;
+    }
+
+    section .title p {
+        font-size: 14px;
+    }
+
+    section.about {
+        padding: 30px 0;
+    }
+
+    section.about ul li {
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        background: #fafafa;
+        margin-bottom: 10px;
+    }
+
+    section.about ul li a .img-box {
+        height: 300px;
+    }
+
+    section.innovation .img-box {
+        height: 400px;
+    }
+
+    section.me ul.list>li {
+        padding: 20px 20px 20px 45px;
+    }
+
+    section.me ul.list>li p {
+        text-align: justify;
+    }
+
+    section.sns ul li a .img-box {
+        height: 200px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+} */
+
+/* 모바일 320px 해상도 (아이폰5 / SE) */
+/* @media screen and (max-width: 320px) {
+
+    br.mo {
+        display: block;
+    }
+
+    .wrap {
+        min-width: 320px;
+    }
+
+    header .inner-header .logo {
+        width: 140px;
+        height: auto;
+    }
+
+    header .inner-header .gnb-mobile {
+        font-size: 32px;
+        margin-right: 15px;
+        position: absolute;
+        right: 0;
+        bottom: 2px;
+    }
+
+    section.main .main-title h2 {
+        font-size: 22px;
+    }
+
+    section.main .main-title p {
+        font-size: 14px;
+    }
+
+    section.about ul li a .img-box {
+        height: 200px;
+    }
+
+    section.about ul li a .text {
+        padding: 15px;
+    }
+
+    section.about ul li a .text h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    section.about ul li a .text p {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    section.innovation .img-box {
+        height: 300px;
+    }
+
+    section.sns ul li a .img-box {
+        height: 170px;
+    }
+
+    section.sns ul li a .bottom {
+        padding: 20px 10px;
+    }
+} */
