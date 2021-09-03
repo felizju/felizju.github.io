@@ -196,8 +196,16 @@ section.main .main-title .left h2 {
     0% {
       width: 0%;
     }
+
+    45% {
+        width: 100%;
+    }
+
     50% {
       width: 100%;
+    }
+    55%{
+        width: 100%;
     }
     100% {
       width: 0%;
